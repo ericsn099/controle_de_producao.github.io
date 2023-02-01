@@ -39,7 +39,7 @@ include './Views/partials/Header/mobile.php';
 		</form>
 		<div class="card-footer mb-3">
 			<div class="d-flex justify-content-center links">
-				Não tem uma conta?&nbsp;<a href="/cadastro">Criar</a>
+				N&atilde;o possui uma conta?&nbsp;<a href="/cadastro">Criar</a>
 			</div>
 		</div>
 	</div>
