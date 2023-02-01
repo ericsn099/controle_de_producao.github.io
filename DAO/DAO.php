@@ -12,9 +12,9 @@ class DAO
     public function __construct()
     {
         try {
-            $dsn = "mysql:host=localhost:3306;dbname=controle_producao2";
+            $dsn = "mysql:host=".$_ENV['db']['host'].";dbname=".$_ENV['db']['db']."";
             $opcoes = array(PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION);
-            $this->conexao = new PDO($dsn, 'root', '19019407eric@', $opcoes);
+            $this->conexao = new PDO($dsn, $_ENV['db']['user'], $_ENV['db']['pass'], $opcoes);
         } catch (PDOException $e) {
             echo $e->getMessage();
         }
