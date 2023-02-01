@@ -3,19 +3,15 @@
 namespace controle_de_producao\DAO;
 
 use controle_de_producao\Models\SetorModel;
-use controle_de_producao\Conn\Conn;
 use \PDOException;
 use \PDO;
 
-class SetorDao
+class SetorDao extends DAO
 {
-	private $conexao;
-
 	//construtor da classe
 	public function __construct()
 	{
-		$conn = new Conn();
-		$this->conexao = $conn->returnConnection();
+		parent::__construct();
 	}
 
 	public function insert(SetorModel $model)

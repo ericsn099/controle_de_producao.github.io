@@ -2,21 +2,17 @@
 
 namespace controle_de_producao\DAO;
 
-use controle_de_producao\Conn\Conn;
 use controle_de_producao\Models\LoginModel;
 use \PDOException;
 use \PDO;
 
-class LoginDao
+class LoginDao extends DAO
 {
-	private $conexao;
-
+	//construtor da classe
 	public function __construct()
 	{
-		$conn = new Conn();
-		$this->conexao = $conn->returnConnection();
+		parent::__construct();
 	}
-
 	public function insert(LoginModel $model)
 	{
 		$sql = "INSERT INTO usuario(nome, login, senha) VALUES (?,?,?);";

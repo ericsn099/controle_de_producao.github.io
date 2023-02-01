@@ -2,20 +2,16 @@
 
 namespace controle_de_producao\DAO;
 
-use controle_de_producao\Conn\Conn;
 use controle_de_producao\Models\ProdutoModel;
 use \PDOException;
 use \PDO;
 
-class ProdutoDao
+class ProdutoDao extends DAO
 {
-	private $conexao;
-
 	//construtor da classe
 	public function __construct()
 	{
-		$conn = new Conn();
-		$this->conexao = $conn->returnConnection();
+		parent::__construct();
 	}
 
 	public function insert(ProdutoModel $model)

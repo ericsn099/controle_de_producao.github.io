@@ -3,19 +3,15 @@
 namespace controle_de_producao\DAO;
 
 use controle_de_producao\Models\DefeitoModel;
-use controle_de_producao\Conn\Conn;
-use \PDO;
 use \PDOException;
+use \PDO;
 
-class DefeitoDao
+class DefeitoDao extends DAO
 {
-	private $conexao;
-
 	//construtor da classe
 	public function __construct()
 	{
-		$conn = new Conn();
-		$this->conexao = $conn->returnConnection();
+		parent::__construct();
 	}
 
 	public function insert(DefeitoModel $model)

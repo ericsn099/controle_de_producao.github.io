@@ -3,19 +3,15 @@
 namespace controle_de_producao\DAO;
 
 use controle_de_producao\Models\AtendenteModel;
-use controle_de_producao\Conn\Conn;
-use \PDO;
 use \PDOException;
+use \PDO;
 
-class AtendenteDao
+class AtendenteDao extends DAO
 {
-	private $conexao;
-
 	//construtor da classe
 	public function __construct()
 	{
-		$conn = new Conn();
-		$this->conexao = $conn->returnConnection();
+		parent::__construct();
 	}
 
 	public function insert(AtendenteModel $model)
@@ -65,6 +61,7 @@ class AtendenteDao
 			}
 		}
 	}
+
 	public function select()
 	{
 		$sql = "SELECT * FROM atendentes ORDER BY nome";
