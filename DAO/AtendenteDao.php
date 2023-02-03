@@ -1,8 +1,8 @@
 <?php
 
-namespace controle_de_producao\DAO;
+namespace DAO;
 
-use controle_de_producao\Models\AtendenteModel;
+use Models\AtendenteModel;
 use \PDOException;
 use \PDO;
 
@@ -78,6 +78,6 @@ class AtendenteDao extends DAO
 		$stmt->bindValue(1, $id);
 		$stmt->execute();
 
-		return $stmt->fetchObject("controle_de_producao\Models\AtendenteModel");
+		return $stmt->fetchObject("Models\AtendenteModel");
 	}
 }

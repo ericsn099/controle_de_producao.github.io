@@ -1,8 +1,8 @@
 <?php
 
-namespace controle_de_producao\DAO;
+namespace DAO;
 
-use controle_de_producao\Models\LinhaModel;
+use Models\LinhaModel;
 use \PDOException;
 use \PDO;
 
@@ -81,6 +81,6 @@ class LinhaDao extends DAO
 		$stmt->bindValue(1, $id);
 		$stmt->execute();
 
-		return $stmt->fetchObject("controle_de_producao\Models\LinhaModel");
+		return $stmt->fetchObject("Models\LinhaModel");
 	}
 }

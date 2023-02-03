@@ -1,13 +1,13 @@
 <?php
 
-use controle_de_producao\Controllers\AtendenteController;
-use controle_de_producao\Controllers\DefeitoController;
-use controle_de_producao\Controllers\HomeController;
-use controle_de_producao\Controllers\LoginController;
-use controle_de_producao\Controllers\LinhaController;
-use controle_de_producao\Controllers\SetorController;
-use controle_de_producao\Controllers\ProducaoController;
-use controle_de_producao\Controllers\ProdutoController;
+use Controllers\AtendenteController;
+use Controllers\DefeitoController;
+use Controllers\HomeController;
+use Controllers\LoginController;
+use Controllers\LinhaController;
+use Controllers\SetorController;
+use Controllers\ProducaoController;
+use Controllers\ProdutoController;
 
 // Pegando a url digita.
 $url = parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH);

@@ -1,8 +1,8 @@
 <?php
 
-namespace controle_de_producao\Models;
+namespace Models;
 
-use controle_de_producao\DAO\DefeitoDao;
+use DAO\DefeitoDao;
 
 class DefeitoModel
 {

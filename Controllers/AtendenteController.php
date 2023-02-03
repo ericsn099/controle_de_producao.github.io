@@ -1,8 +1,8 @@
 <?php
 
-namespace controle_de_producao\Controllers;
+namespace Controllers;
 
-use controle_de_producao\Models\AtendenteModel;
+use Models\AtendenteModel;
 
 //Criando o Controller do Atendente
 class AtendenteController

@@ -1,8 +1,8 @@
 <?php
 
-namespace controle_de_producao\DAO;
+namespace DAO;
 
-use controle_de_producao\Models\ProducaoModel;
+use Models\ProducaoModel;
 use \PDOException;
 use \PDO;
 
@@ -584,6 +584,6 @@ class ProducaoDao extends DAO
 		$stmt->bindValue(1, $id);
 		$stmt->execute();
 
-		return $stmt->fetchObject("controle_de_producao\Models\ProducaoModel");
+		return $stmt->fetchObject("Models\ProducaoModel");
 	}
 }

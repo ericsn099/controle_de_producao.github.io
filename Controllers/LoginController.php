@@ -1,8 +1,8 @@
 <?php
 
-namespace controle_de_producao\Controllers;
+namespace Controllers;
 
-use controle_de_producao\Models\LoginModel;
+use Models\LoginModel;
 
 //Criando o Controller do Login
 class LoginController

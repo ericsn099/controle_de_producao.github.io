@@ -1,8 +1,8 @@
 <?php
 
-namespace controle_de_producao\Models;
+namespace Models;
 
-use controle_de_producao\DAO\AtendenteDao;
+use DAO\AtendenteDao;
 
 class AtendenteModel
 {

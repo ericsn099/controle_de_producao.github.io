@@ -1,8 +1,8 @@
 <?php
 
-namespace controle_de_producao\DAO;
+namespace DAO;
 
-use controle_de_producao\Models\DefeitoModel;
+use Models\DefeitoModel;
 use \PDOException;
 use \PDO;
 
@@ -80,6 +80,6 @@ class DefeitoDao extends DAO
 		$stmt->bindValue(1, $id);
 		$stmt->execute();
 
-		return $stmt->fetchObject("controle_de_producao\Models\DefeitoModel");
+		return $stmt->fetchObject("Models\DefeitoModel");
 	}
 }

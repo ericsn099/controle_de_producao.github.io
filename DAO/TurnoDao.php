@@ -1,8 +1,8 @@
 <?php
 
-namespace controle_de_producao\DAO;
+namespace DAO;
 
-use controle_de_producao\Models\TurnoModel;
+use Models\TurnoModel;
 use \PDOException;
 use \PDO;
 

@@ -1,8 +1,8 @@
 <?php
 
-namespace controle_de_producao\Controllers;
+namespace Controllers;
 
-use controle_de_producao\Models\ProdutoModel;
+use Models\ProdutoModel;
 
 //Criando o Controller do Produto
 class ProdutoController

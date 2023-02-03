@@ -1,6 +1,6 @@
 <?php
 
-namespace controle_de_producao\DAO;
+namespace DAO;
 
 use \PDO;
 use \PDOException;

@@ -1,8 +1,8 @@
 <?php
 
-namespace controle_de_producao\DAO;
+namespace DAO;
 
-use controle_de_producao\Models\SetorModel;
+use Models\SetorModel;
 use \PDOException;
 use \PDO;
 
@@ -83,6 +83,6 @@ class SetorDao extends DAO
 		$stmt->bindValue(1, $id);
 		$stmt->execute();
 
-		return $stmt->fetchObject("controle_de_producao\Models\SetorModel");
+		return $stmt->fetchObject("Models\SetorModel");
 	}
 }

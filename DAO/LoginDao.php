@@ -1,8 +1,8 @@
 <?php
 
-namespace controle_de_producao\DAO;
+namespace DAO;
 
-use controle_de_producao\Models\LoginModel;
+use Models\LoginModel;
 use \PDOException;
 use \PDO;
 
@@ -58,7 +58,7 @@ class LoginDao extends DAO
 		$stmt->bindValue(2, $senha);
 		$stmt->execute();
 
-		return $stmt->fetchObject("controle_de_producao\Models\LoginModel");
+		return $stmt->fetchObject("Models\LoginModel");
 	}
 
 
@@ -69,7 +69,7 @@ class LoginDao extends DAO
 		$stmt->bindValue(1, $login);
 		$stmt->execute();
 
-		return $stmt->fetchObject("controle_de_producao\Models\LoginModel");
+		return $stmt->fetchObject("Models\LoginModel");
 	}
 
 	public function selectAll()

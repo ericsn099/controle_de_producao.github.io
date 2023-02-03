@@ -1,8 +1,8 @@
 <?php
 
-namespace controle_de_producao\Controllers;
+namespace Controllers;
 
-use controle_de_producao\Models\DefeitoModel;
+use Models\DefeitoModel;
 
 //Criando o Controller do Defeito
 class DefeitoController

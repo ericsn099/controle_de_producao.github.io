@@ -1,6 +1,6 @@
 <?php
 
-define('BASEDIR', dirname(__FILE__) . '/../');
+define('BASEDIR', dirname(__FILE__, 1));
 
 //dados de conexão com banco de dados
 $_ENV['db']['host'] = 'localhost:3306';

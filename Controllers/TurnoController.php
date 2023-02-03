@@ -1,6 +1,6 @@
 <?php
 
-namespace controle_de_producao\Controllers;
+namespace Controllers;
 //Criando o Controller do Turno
 class TurnoController
 {

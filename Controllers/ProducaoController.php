@@ -1,15 +1,15 @@
 <?php
 
-namespace controle_de_producao\Controllers;
+namespace Controllers;
 
-use controle_de_producao\Models\LoginModel;
-use controle_de_producao\Models\DefeitoModel;
-use controle_de_producao\Models\ProdutoModel;
-use controle_de_producao\Models\LinhaModel;
-use controle_de_producao\Models\TurnoModel;
-use controle_de_producao\Models\ProducaoModel;
-use controle_de_producao\Models\AtendenteModel;
-use controle_de_producao\Models\SetorModel;
+use Models\LoginModel;
+use Models\DefeitoModel;
+use Models\ProdutoModel;
+use Models\LinhaModel;
+use Models\TurnoModel;
+use Models\ProducaoModel;
+use Models\AtendenteModel;
+use Models\SetorModel;
 
 //Criando o Controller da Produção
 class ProducaoController

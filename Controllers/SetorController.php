@@ -1,7 +1,7 @@
 <?php
-namespace controle_de_producao\Controllers;
+namespace Controllers;
 
-use controle_de_producao\Models\SetorModel;
+use Models\SetorModel;
 
 //Criando o Controller do Setor
 class SetorController
